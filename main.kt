@@ -110,8 +110,16 @@ fun main() {
       } 
       else -> print("unknown number")
     }
+
+    val vic1 = "IT WAS A "
+    val vic2 = "DEVASTATING BLOW!!!"
     
-    
+    println("\n")
+    // repeat loop
+    repeat(3) {
+      println("$vic1$vic2")
+    }
+    println("\n")
     
     // aksing user if they would like to re-run the program 
     println("Would you like to perform another calculation? (Y/N)") 
@@ -127,11 +135,6 @@ fun main() {
 }
 
 
-
-// loop constructs
-// fo each
-
-
 // reasons why i think i deserve an A
 /*
 i ask the user if they want to re run the program using a while loop 
@@ -139,9 +142,6 @@ i worked with user input
 i commented my code
 implemented a switch statement aka when expression  
 make a pokemon reference 
-
-
-
 
 
 */
