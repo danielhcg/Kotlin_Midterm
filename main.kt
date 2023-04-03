@@ -49,10 +49,10 @@ fun main() {
     val userOP = readLine()
     val userOPChar = userOP?.firstOrNull()
 
-    var isCor: String? = null // declare isCor variable to deterime if user entered correct numbers 
+    var isCor: String? // declare isCor variable to deterime if user entered correct numbers 
     // to hold the values of the 2 numbers to be computed
-    var x: Double = 0.0
-    var y: Double = 0.0
+    var x: Double
+    var y: Double
     
     // validating that the user entered the correct number using a do while loop 
     do {
@@ -85,30 +85,27 @@ fun main() {
         println("Charizard... I CHOOSE YOU!!")
         when (userOPChar) {
           '*' -> println("Charizard used Fire Spin to get a result of ${multiply(x,y)}")
-          '+' -> add(x, y)
-          '-' -> subtract(x, y)
-          '/' -> divide(x, y)
-          else -> null
+          '+' -> println("Charizard used Fire Spin to get a result of ${add(x, y)}")
+          '-' -> println("Charizard used Fire Spin to get a result of ${subtract(x, y)}")
+          '/' -> println("Charizard used Fire Spin to get a result of ${divide(x, y)}")
         }
       } 
       2 -> {
         println("Venusaur... I CHOOSE YOU!!!")
         when (userOPChar) {
-          '*' -> multiply(x, y)
-          '+' -> add(x, y)
-          '-' -> subtract(x, y)
-          '/' -> divide(x, y)
-          else -> null
+          '*' -> println("Venusaur used Vine Whip to get a result of ${multiply(x,y)}")
+          '+' -> println("Venusaur used Vine Whip to get a result of ${add(x, y)}")
+          '-' -> println("Venusaur used Vine Whip to get a result of ${subtract(x, y)}")
+          '/' -> println("Venusaur used Vine Whip to get a result of ${divide(x, y)}")
         }
       } 
       3 -> {
         println("Blastoise... I CHOOSE YOU!!!")
         when (userOPChar) {
-          '*' -> multiply(x, y)
-          '+' -> add(x, y)
-          '-' -> subtract(x, y)
-          '/' -> divide(x, y)
-          else -> null
+          '*' -> println("Blastoise used Hydro Cannon to get a result of ${multiply(x,y)}")
+          '+' -> println("Blastoise used Hydro Cannon to get a result of ${add(x, y)}")
+          '-' -> println("Blastoise used Hydro Cannon to get a result of ${subtract(x, y)}")
+          '/' -> println("Blastoise used Hydro Cannon to get a result of ${divide(x, y)}")
         }
       } 
       else -> print("unknown number")
